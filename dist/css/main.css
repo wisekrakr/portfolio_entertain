@@ -111,71 +111,6 @@
 .nav-item:nth-child(7) {
   transition-delay: 0.7s; }
 
-.carousel-home .carousel-item {
-  height: 100vh;
-  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; }
-  .carousel-home .carousel-item a:hover {
-    color: rgba(74, 67, 67, 0.85);
-    transition: all 0.75s ease-out; }
-  .carousel-home .carousel-item.item-1 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/david/d_bg_portrait.jpg") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-home .carousel-item.item-2 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/code.jpg") no-repeat center center fixed;
-    background-size: cover; }
-    .carousel-home .carousel-item.item-2 .fa-code {
-      color: #4ac7c2; }
-  .carousel-home .carousel-item.item-3 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/dsms.png") no-repeat center center fixed;
-    background-size: cover; }
-    .carousel-home .carousel-item.item-3 .fa-gamepad {
-      color: #4ac7c2; }
-  .carousel-home .carousel-item.item-4 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/underconstruction.jpg") no-repeat center center fixed;
-    background-size: cover; }
-    .carousel-home .carousel-item.item-4 .fa-youtube {
-      color: #4ac7c2; }
-  .carousel-home .carousel-item.item-5 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philosophy.jpg") no-repeat center center fixed;
-    background-size: cover; }
-    .carousel-home .carousel-item.item-5 .fa-brain {
-      color: #4ac7c2; }
-  .carousel-home .carousel-item.item-6 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/contact.jpg") no-repeat center center fixed;
-    background-size: cover; }
-    .carousel-home .carousel-item.item-6 .fa-id-card {
-      color: #4ac7c2; }
-
-.carousel-games .carousel-item {
-  height: 100vh;
-  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; }
-  .carousel-games .carousel-item a:hover {
-    color: rgba(74, 67, 67, 0.85);
-    transition: all 0.75s ease-out; }
-  .carousel-games .carousel-item .fa-eye {
-    color: #4ac7c2; }
-  .carousel-games .carousel-item.item-1 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/dsms.png") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-games .carousel-item.item-2 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/flappy.gif") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-games .carousel-item.item-3 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/bricks.png") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-games .carousel-item.item-4 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/underconstruction.jpg") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-games .carousel-item.item-5 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/reflex.png") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-games .carousel-item.item-6 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/rps-page.png?token=AKZZUA6EENASANMGEDD3LI25QBUZE") no-repeat center center fixed;
-    background-size: cover; }
-  .carousel-games .carousel-item.item-7 {
-    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/games/DSMS_redux_start.gif?token=AKZZUA7DWA5OX5BUWYTYD3C5QBUZ4") no-repeat center center fixed;
-    background-size: cover; }
-
 .carousel-entertainment .carousel-item {
   height: 100vh;
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; }
@@ -492,26 +427,10 @@ h3.heading {
     padding-bottom: 1.2rem; }
   .carousel-caption .large-btn {
     font-size: 1rem; }
-  .narrow h3 {
-    font-size: 1.6rem; }
-  .narrow p.lead {
-    font-size: 1.2rem; }
-  .philosophy .time #time {
-    font-size: 6rem; }
-  .carousel-home .carousel-item,
-  .carousel-games .carousel-item,
   .carousel-entertainment .carousel-item {
     box-shadow: inset 10px 10px 170px #000000, inset -10px -10px 170px #000000; } }
 
 @media (max-width: 576px) {
-  .narrow h3 {
-    font-size: 1.1rem; }
-  .narrow p.lead {
-    font-size: 0.8rem; }
-  #gallery {
-    display: none; }
-  .philosophy .time #time {
-    font-size: 4rem; }
   #entertainment .hide-sm {
     display: none; }
   #entertainment .container {

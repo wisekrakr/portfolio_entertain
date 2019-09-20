@@ -44,21 +44,6 @@
     }
   }
 
-  .narrow {
-    h3 {
-      font-size: 1.6rem;
-    }
-    p.lead {
-      font-size: 1.2rem;
-    }
-  }
-
-  .philosophy .time #time {
-    font-size: 6rem;
-  }
-
-  .carousel-home,
-  .carousel-games,
   .carousel-entertainment {
     .carousel-item {
       box-shadow: inset 10px 10px 170px #000000, inset -10px -10px 170px #000000;
@@ -66,23 +51,6 @@
   }
 }
 @media (max-width: 576px) {
-  .narrow {
-    h3 {
-      font-size: 1.1rem;
-    }
-    p.lead {
-      font-size: 0.8rem;
-    }
-  }
-
-  #gallery {
-    display: none;
-  }
-
-  .philosophy .time #time {
-    font-size: 4rem;
-  }
-
   #entertainment {
     .hide-sm {
       display: none;
