@@ -1,0 +1,356 @@
+@import "config"; //_congif.scss file with variables
+@import "menu";
+@import "slider";
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background: rgba(lighten($primary-color, 6), 0.7);
+  color: setTextColor($primary-color);
+}
+
+.text-second {
+  color: $secondary-color;
+}
+
+/*================ Menu Header ===========*/
+header {
+  position: fixed; //always on top
+  z-index: 2; //the bigger the number, the closer it is
+  width: 100%;
+}
+
+/*================ Headings ===========*/
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800;
+
+  &.large-heading {
+    // large-heading is attached to h1
+    font-size: 4.2rem;
+    padding: 2rem !important;
+  }
+
+  &.small-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 6), 0.5);
+  }
+
+  &.x-small-heading {
+    margin-bottom: 1rem;
+    padding: 0.1rem 0.5rem;
+    background: rgba(lighten($secondary-color, 6), 0.5);
+  }
+}
+
+.heading {
+  color: rgba(lighten($tertiary-color, 6), 0.85);
+  padding: 2rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.heading-underline {
+  width: 6rem;
+  height: 0.3rem;
+  background-color: rgba(lighten($secondary-color, 6), 0.85);
+  margin: 0 auto 2rem;
+}
+
+/*================ Buttons ===========*/
+.btn {
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.large-btn {
+  background-color: rgba(darken($tertiary-color, 6), 0.85);
+  border-width: large;
+  border-radius: 5rem;
+  padding: 0.9rem 1.5rem;
+  white-space: normal;
+
+  @include easeOut;
+}
+
+.med-btn {
+  background-color: rgba(darken($secondary-color, 6), 0.85);
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.6rem 1.1rem;
+  margin: 1rem;
+  @include easeOut;
+}
+
+.small-btn {
+  background-color: rgba(darken($secondary-color, 6), 0.85);
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.3rem 0.75rem;
+  margin: 0.5rem;
+  @include easeOut;
+}
+
+/*================ Text Styles ===========*/
+
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+// .container {
+//   max-width: 1180px;
+//   text-align: center;
+//   margin: 0 auto; /* pushes everything to the middle */
+//   padding: 3rem 3rem; /* 1 rem is whatever the html core font size is (default is 16) */
+// }
+
+/*================ Entertainment Page ===========*/
+
+#entertainment {
+  background: #000000;
+  .container {
+    width: 100%;
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto; /* pushes everything to the middle */
+    padding: 0; /* 1 rem is whatever the html core font size is (default is 16) */
+  }
+
+  .tabs {
+    background-color: rgba(darken($primary-color, 6), 0.85);
+  }
+
+  .tabs .container > div {
+    &:hover {
+      @include easeOut();
+      background: rgba(darken($secondary-color, 6), 0.85);
+      color: setTextColor($secondary-color);
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .tab-border {
+    border-bottom: rgba(lighten($tertiary-color, 6), 0.85) 6px solid;
+  }
+
+  .tab-content {
+    padding: 3rem;
+
+    // Hide tab content initially
+    #tab-1-content,
+    #tab-2-content,
+    #tab-3-content {
+      display: none;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .tab-2-content-bottom img {
+      border: 4px solid $tertiary-color;
+      width: 250px;
+      height: 150px;
+    }
+
+    // Audio Player
+    #tab-3-content {
+      width: 525px;
+      min-height: 400px;
+      background: rgba(lighten($tertiary-color, 6), 0.45);
+      overflow: hidden;
+      margin: 60px auto;
+      border: 2px solid rgba(darken($secondary-color, 6), 0.85);
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+
+      #audio-info {
+        text-align: center;
+
+        .artist {
+          font-weight: bold;
+        }
+      }
+
+      .cover {
+        width: 100%;
+        height: 300px;
+        z-index: 1;
+      }
+
+      .clearFix {
+        clear: both;
+      }
+
+      input#volume {
+        width: 95;
+        -webkit-appearance: none !important;
+        background: rgba(darken($secondary-color, 6), 0.75);
+        height: 1px;
+        margin: 20px;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none !important;
+          background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/dd_logo_solo.png")
+            no-repeat;
+          height: 12px;
+          width: 12px;
+        }
+      }
+
+      #audio-buttons {
+        width: 90%;
+        // display: block;
+        margin: 15px auto;
+        margin-left: 23px;
+        overflow: auto;
+      }
+
+      button#play {
+        width: 70px;
+        height: 70px;
+        background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/play.png")
+          no-repeat;
+      }
+      button#pause {
+        width: 70px;
+        height: 70px;
+        background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/pause.png")
+          no-repeat;
+      }
+      button#stop {
+        width: 70px;
+        height: 70px;
+        background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/stop.png")
+          no-repeat;
+      }
+      button#next {
+        width: 70px;
+        height: 70px;
+        background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/next.png")
+          no-repeat;
+      }
+      button#prev {
+        width: 70px;
+        height: 70px;
+        background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/pre.png")
+          no-repeat;
+      }
+
+      #playlist {
+        list-style: none;
+        padding: 10px;
+
+        li {
+          cursor: pointer;
+          margin: 5px;
+        }
+      }
+      #playlist li.active {
+        font-weight: bold;
+        padding: 3px;
+        background: rgba(darken($secondary-color, 6), 0.75);
+      }
+
+      #tracker {
+        position: relative;
+        width: 100%;
+        #progressbar {
+          width: 80%;
+          margin-left: 25%;
+          margin-bottom: 20px;
+          margin-top: 9px;
+          height: 10px;
+
+          background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/progress_bg.png")
+            no-repeat;
+
+          #progress {
+            background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/progress.png")
+              no-repeat;
+            width: 80%;
+            position: absolute;
+            height: 10px;
+          }
+        }
+
+        #duration {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          padding: 4px 8px;
+          background: #000000;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+        }
+      }
+    }
+
+    h4 {
+      font-weight: 200;
+    }
+  }
+}
+
+/*================ Footer ===========*/
+//For Most Pages
+#footer {
+  background-color: rgba(darken($primary-color, 6), 0.85);
+  color: #fff;
+  padding-top: 2rem 0 3rem;
+
+  img {
+    height: 3rem;
+    margin: 1.5rem 0;
+  }
+
+  hr.socket {
+    border-top: 0.2rem solid $secondary-color;
+    width: 100%;
+  }
+
+  //For Pages that don't have a page full of content
+  &.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+@import "mobile"; //run after everything else is done

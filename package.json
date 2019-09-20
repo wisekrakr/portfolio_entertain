@@ -1,0 +1,21 @@
+{
+  "name": "entertainment",
+  "version": "1.0.0",
+  "description": "a responsive landing  webpage (like netflix) with tabs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "landing",
+    "webpage",
+    "netflix",
+    "responsive",
+    "javascript"
+  ],
+  "author": "david damian",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
